@@ -1,0 +1,7 @@
+<% flash.each do |name, msg| %>
+    <div class="alert alert-<%= name == :notice ? "success" : "error" %>" id="removealert">
+      <a class="close" data-dismiss="alert">x</a>
+      <%= msg %>
+    </div>
+<% end %>
+<%flash[:error] = nil %>

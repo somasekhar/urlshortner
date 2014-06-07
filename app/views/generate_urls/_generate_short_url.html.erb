@@ -1,0 +1,18 @@
+<div>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>#</th>
+    <th>Long Url</th>
+    <th>Short Url</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td><%= link_to @long_url, @long_url, :target => "_blank"%></td>
+    <td><%= link_to @short_url.short_url , @short_url.short_url, :target => "_blank"%></td>
+  </tr>
+  </tbody>
+</table>
+</div>

@@ -1,0 +1,2 @@
+module GenerateUrlsHelper
+end

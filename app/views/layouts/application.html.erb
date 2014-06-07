@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UrlShortner</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+
+     <span class="brand"><%= link_to "UrlShortner", root_path%></span>
+
+      <div class="nav-collapse">
+        <ul class="nav pull-right">
+          <li><%= link_to "Contact Us", "http://www.linkedin.com/profile" %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="span9"><%= yield %></div>
+    <div class="span3">
+      <h2>About Application</h2>
+      Converts Long Url to Short url.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

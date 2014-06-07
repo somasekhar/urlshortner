@@ -1,0 +1,10 @@
+<div id="errors_div"></div>
+<legend>Paste your Long Url here:</legend>
+<%= form_tag generate_short_url_path, :method => :post, :class => "form-inline", :remote => true do%>
+    <span><%= text_field_tag 'long_url', nil, :placeholder => 'Paste your Long Url here'%></span>
+    <span><button type="submit" class="btn btn-primary  ">Submit</button></span>
+<%end%>
+<legend></legend>
+<div id="shorted_url">
+
+</div>

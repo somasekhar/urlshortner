@@ -1,0 +1,7 @@
+<%if !flash[:error].blank?%>
+$("#errors_div").html("<%= escape_javascript(render(:partial => 'error_msg')) %>");
+$("#long_url").focus();
+<%else%>
+$("#shorted_url").html("<%= escape_javascript(render(:partial => 'generate_short_url')) %>");
+$("#errors_div").html("");
+<%end%>
